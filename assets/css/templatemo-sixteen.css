@@ -240,6 +240,13 @@ header .navbar {
 .background-header .navbar-nav .show>.nav-link {
 	color: #f33f3f!important;
 }
+.logo {
+	align-items: center;
+}
+.logo-image {
+	width: 250px;
+	height: auto;
+}
 .navbar .navbar-brand {
 	float: 	left;
 	margin-top: -12px;
