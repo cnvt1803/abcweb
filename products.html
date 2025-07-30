@@ -25,221 +25,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
-    <style>
-     /* ===== Products Section ===== */
-      .products {
-          padding: 4rem 0;
-          background-color: #f8f9fa;
-      }
-
-      /* ===== Filter Tabs ===== */
-      .filters {
-          margin-bottom: 2.5rem;
-          text-align: center;
-      }
-
-      .filters ul {
-          display: inline-flex;
-          background: #fff;
-          padding: 0.5rem;
-          border-radius: 50px;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-      }
-
-      .filters ul li {
-          color: #1e1e1e;
-          font-size: 0.85rem;
-          font-weight: 600;
-          letter-spacing: 0.5px;
-          text-transform: uppercase;
-          padding: 0.75rem 1.75rem;
-          cursor: pointer;
-          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-          border-radius: 50px;
-          margin: 0 0.25rem;
-      }
-
-      .filters ul li.active,
-      .filters ul li:hover {
-          background: #007bff;
-          color: #fff;
-          box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
-      }
-
-      /* ===== Product Cards ===== */
-      .product-item {
-          background: #fff;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          margin-bottom: 2rem;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          border: 1px solid rgba(0, 0, 0, 0.03);
-      }
-
-      .product-item:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-      }
-
-      .product-item img {
-          width: 100%;
-          height: 220px;
-          object-fit: contain;
-          background: #fff;
-          padding: 1.5rem;
-          border-bottom: 1px solid #f0f0f0;
-      }
-
-      .down-content {
-          padding: 1.75rem;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-      }
-
-      .down-content h4 {
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: #1e1e1e;
-          margin-bottom: 0.75rem;
-          transition: color 0.2s ease;
-          line-height: 1.4;
-      }
-
-      .down-content h4:hover {
-          color: #0062cc;
-      }
-
-      .down-content h6 {
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: #007bff;
-          margin-bottom: 1rem;
-      }
-
-      .down-content p {
-          margin-bottom: 1.25rem;
-          color: #555;
-          line-height: 1.6;
-          flex: 1;
-          font-size: 0.95rem;
-      }
-
-      /* ===== Star Ratings ===== */
-      .stars {
-          margin-top: auto;
-          padding-top: 0.5rem;
-          border-top: 1px dashed #eee;
-      }
-
-      .stars li {
-          display: inline-block;
-          color: #ffc107;
-          font-size: 1rem;
-          margin-right: 0.15rem;
-      }
-
-      /* ===== Pagination ===== */
-      .pages {
-          margin-top: 3rem;
-          text-align: center;
-      }
-
-      .pages li {
-          display: inline-block;
-          margin: 0 0.25rem;
-      }
-
-      .pages li a {
-          display: inline-flex;
-          width: 42px;
-          height: 42px;
-          align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          color: #1e1e1e;
-          border-radius: 50%;
-          font-weight: 600;
-          transition: all 0.25s ease;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-          text-decoration: none;
-      }
-
-      .pages li.active a,
-      .pages li a:hover {
-          background: #007bff;
-          color: #fff;
-          transform: scale(1.05);
-      }
-
-      /* ===== Responsive Adjustments ===== */
-      @media (max-width: 991px) {
-          .product-item {
-              margin-bottom: 1.5rem;
-          }
-          
-          .down-content {
-              padding: 1.5rem;
-          }
-      }
-
-      @media (max-width: 767px) {
-          .products {
-              padding: 3rem 0;
-          }
-          
-          .filters ul {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              padding: 0.5rem;
-              background: transparent;
-              box-shadow: none;
-          }
-          
-          .filters ul li {
-              font-size: 0.8rem;
-              padding: 0.5rem 1.25rem;
-              margin: 0.25rem;
-              background: #fff;
-              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-          }
-          
-          .product-item img {
-              height: 180px;
-              padding: 1rem;
-          }
-          
-          .down-content {
-              padding: 1.25rem;
-          }
-          
-          .down-content h4 {
-              font-size: 1.05rem;
-          }
-          
-          .down-content h6 {
-              font-size: 1rem;
-          }
-      }
-
-      @media (max-width: 575px) {
-          .filters ul li {
-              padding: 0.5rem 1rem;
-              font-size: 0.75rem;
-          }
-          
-          .product-item {
-              border-radius: 10px;
-          }
-      }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/products.css">
   </head>
 
   <body>
@@ -308,8 +94,12 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-12">
             <div class="filters">
               <ul>
-                  <li class="active" data-filter="*" >Tất cả</li>
-                  <li data-filter=".des">Nổi bật</li>
+                  <li class="active" data-filter="*" >Nổi bật</li>
+                  <li data-filter=".des">Công nghiệp</li>
+                  <li data-filter=".gd">Giáo dục</li>
+                  <li data-filter=".ac">Access Control</li>
+                  <li data-filter=".lkdt">Linh kiện điện tử</li>
+                  <li data-filter=".dif">Khác</li>
               </ul>
             </div>
           </div>
@@ -318,9 +108,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <div class="row grid">
                     <div class="col-lg-4 col-md-4 all des">
                       <div class="product-item">
-                        <a href="../products/dl-ABC2200.html"><img src="assets/products/ABC2200_IoT_DataLogger_ABC2200.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
+                        <a href="../product-list/dl-ABC2200.html"><img src="assets/products/ABC2200_IoT_DataLogger_ABC2200.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
                         <div class="down-content">
-                          <a href="../products/dl-ABC2200.html"><h4>IoT DataLogger ABC2200</h4></a>
+                          <a href="../product-list/dl-ABC2200.html"><h4>IoT DataLogger ABC2200</h4></a>
                           <h6>50.000.000 VNĐ</h6>
                           <p>Giải pháp giám sát nước ngầm. Thiết bị thu thập, lưu trữ và truyền tải dữ liệu...</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
@@ -336,9 +126,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                     </div>
                     <div class="col-lg-4 col-md-4 all des">
                       <div class="product-item">
-                        <a href="../products/dl-ABC2300.html"><img src="assets/products/Brochure_ABC2300_2.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
+                        <a href="../product-list/dl-ABC2300.html"><img src="assets/products/Brochure_ABC2300_2.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
                         <div class="down-content">
-                          <a href="../products/dl-ABC2300.html"><h4>IoT DataLogger ABC2300</h4></a>
+                          <a href="../product-list/dl-ABC2300.html"><h4>IoT DataLogger ABC2300</h4></a>
                           <h6>55.000.000 VNĐ</h6>
                           <p>Giải pháp giám sát nước ngầm. Thiết bị thu thập, lưu trữ và truyền tải dữ liệu...</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
@@ -352,14 +142,14 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 all">
+                    <div class="col-lg-4 col-md-4 all gd">
                       <div class="product-item">
-                       <a href="../products/BKIT-ARM4.html">
+                       <a href="../product-list/BKIT-ARM4.html">
                         <img src="assets/products/Kit_TN_Arm_WhiteBackground-6.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;" />
                       </a>
 
                         <div class="down-content">
-                          <a href="../products/BKIT-ARM4.html"><h4>KIT Thí Nghiệm BKIT ARM4</h4></a>
+                          <a href="../product-list/BKIT-ARM4.html"><h4>KIT Thí Nghiệm BKIT ARM4</h4></a>
                          <h6>5.000.000 VNĐ</h6>
                           <p>Kit thí nghiệm Vi điều khiển, Hệ thống nhúng, IoT dựa trên công nghệ STM32F4</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
@@ -373,11 +163,11 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 all des">
+                    <div class="col-lg-4 col-md-4 all ac">
                       <div class="product-item">
-                        <a href="../products/ACS2200.html"><img src="assets/products/ACS_Device-1.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
+                        <a href="../product-list/ACS2200.html"><img src="assets/products/ACS_Device-1.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
                         <div class="down-content">
-                          <a href="../products/ACS2200.html"><h4>Access Control System ACS2200</h4></a>
+                          <a href="../product-list/ACS2200.html"><h4>Access Control System ACS2200</h4></a>
                           <h6>30.000.000 VNĐ</h6>
                           <p>Hệ thống kiểm soát truy cập ACS2200 bao gồm thiết bị quản lý truy cập...</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
@@ -393,9 +183,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                     </div>
                     <div class="col-lg-4 col-md-4 all des">
                       <div class="product-item">
-                        <a href="../products/rtu-ABC1804.html"><img src="assets/products/ABC1804_RTU.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
+                        <a href="../product-list/rtu-ABC1804.html"><img src="assets/products/ABC1804_RTU.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
                         <div class="down-content">
-                          <a href="../products/rtu-ABC1804.html"><h4>RTU ABC1804</h4></a>
+                          <a href="../product-list/rtu-ABC1804.html"><h4>RTU ABC1804</h4></a>
                           <h6>30.000.000 VNĐ</h6>
                           <p>RTU ABC1804 là một thiết bị đầu cuối từ xa nhỏ gọn, tiết kiệm năng lượng...</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
@@ -409,11 +199,11 @@ https://templatemo.com/tm-546-sixteen-clothing
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 all">
+                    <div class="col-lg-4 col-md-4 all dif">
                       <div class="product-item">
-                        <a href="../products/loa-CNTT-VT.html"><img src="assets/products/LoaIoT.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
+                        <a href="../product-list/loa-CNTT-VT.html"><img src="assets/products/LoaIoT.png" alt="" style="width:100%; height:200px; object-fit:contain; background:#fff; padding:10px;"></a>
                         <div class="down-content">
-                          <a href="../products/loa-CNTT-VT.html"><h4>Cụm Thu Phát Thanh Ứng dụng CNTT-VT</h4></a>
+                          <a href="../product-list/loa-CNTT-VT.html"><h4>Cụm Thu Phát Thanh Ứng dụng CNTT-VT</h4></a>
                           <h6>15.000.000 VNĐ</h6>
                           <p>Giải pháp Loa IoT</p>
                            <ul class="stars" style="display: flex; margin: 0; padding-left: 0; list-style: none;">
