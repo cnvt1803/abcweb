@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BKIT ARM4</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #111;
+        background-color: #fff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: space-between; /* Tách đều 2 bên */
+        padding: 20px;
+    }
+
+    .left {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #00a6f0;
+        margin: 10px 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 40px;
+        color: #002776;
+    }
+
+    .spec-title {
+        font-weight: bold;
+        color: #003b9f;
+    }
+
+    .spec-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Khoảng cách vừa phải giữa các cột */
+        margin-top: 20px;
+    }
+
+    .spec-group p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li::before {
+        content: "✔️ ";
+        margin-right: 5px;
+        color: #007bff;
+    }
+    .features-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .features-left {
+        flex: 1;
+    }
+
+    .features-left img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .features-right {
+        flex: 1;
+    }
+    .feature-intro {
+        background-color: #e6f0ff;
+        padding: 12px 16px;
+        border-left: 4px solid #007bff;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .features-right h3 {
+        font-size: 28px;
+        color: #002776;
+        margin-bottom: 20px;
+    }
+
+    .features-right ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .features-right li {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .features-right li::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+    
+<div class="container">
+    <!-- Header + Image -->
+    <div class="row">
+        <div class="left">
+            <h1>KIT THÍ NGHIỆM BKIT ARM4</h1>
+            <hr style="border-top: 2px solid #ccc; width: 60px; margin-left: 0;">
+            <h2>Kit thí nghiệm Vi điều khiển, Hệ thống nhúng, IoT dựa trên công nghệ STM32F4
+            </h2>
+            <hr style="border-top: 2px solid #ccc; width: 60px; margin-left: 0;">
+            <div class="mt-4">
+                <a href="https://github.com/infos-abcsolutions" target="_blank" style="color: #007bff; text-decoration: none;">
+                    Link GitHub Source Code các bài Labs
+                </a>
+                <br />
+                <a href="https://abcsolutions.com.vn/wp-content/uploads/2023/11/KitThiNghiem_STM32_ARM4_QuickStartGuide_20231027_1027.pdf" target="_blank" style="color: #007bff; text-decoration: none;">
+                    Quick Start Guide
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#"><img src="../assets/products/Kit_TN_Arm_WhiteBackground-6.png" alt=""></a>
+        </div>
+    </div>
+
+
+
+    <!-- Specifications Section -->
+    <h3>Đặc tính kỹ thuật</h3>
+    <hr style="border-top: 2px solid #ccc; width: 60px; margin-left: 0;">
+    <div class="spec-grid">
+        <div class="spec-group">
+            <div class="spec-title">CHIP xử lý - STM32F407ZGT6</div>
+            <p>Tần số tối đa: 168MHz<br/>
+            RAM: 128 KB <br/>
+            Flash: 1024 KB</p>
+
+            <div class="spec-title">Công cụ Debug onboard</div>
+            <p>ST-LINK/V2</p>
+            
+            <div class="spec-title">Nguồn</div>
+            <p>12-24VDC</p>
+            <div class="spec-title">Key Matrix onboard</div>
+            <p>4x4</p>
+        </div>
+        <div class="spec-group">
+            <div class="spec-title">Module SIM onboard</div>
+            <p>A7670C</p>
+
+            <div class="spec-title">Module RTC onboard</div>
+            <p>DS3231</p>
+
+            <div class="spec-title">LCD Touch Screen onboard</div>
+            <p>Độ phân giải: 240*320 RGB<br/>
+            Cảm ứng điện trở: XPT2046<br/>
+            Driver: IL9341
+            </p>
+            <div class="spec-title">Cảm biến onboard</div>
+            <p>Cảm biến ánh sáng, nhiệt độ <br/>
+                Biến trở (giả lập Analog sensor)
+            </p>
+        </div>
+
+
+        <div class="spec-group">
+            <div class="spec-title">Memory</div>
+            <p>RAM: 192 KB<br/>
+            Eeprom: 512 Kbit (AT24C512)<br/>
+            SRAM: 8 Mbit (IS61LV51216)
+            </p>
+                
+            <div class="spec-title">Hỗ trợ giao tiếp</div>
+            RS232<br/>
+            RS485<br/>
+            CAN</p>
+
+            <div class="spec-title">Module ESP8266</div>
+            Wifi<br/>
+            Ethernet (ENC28J60)y<br/>
+            SD card</p>
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2 style="color: #002776; font-weight: 800;">KIT Thí nghiệm BKIT ARM4 phục vụ</h2>
+            <hr style="border-top: 2px solid #ccc; width: 60px; margin-left: 0;">
+            
+            <div class="mb-4">
+                <p style="font-weight: bold; color: #002776;">
+                    Giảng dạy và học tập
+                </p>
+                <p>Vi xử lý - Vi điều khiển, Hệ thống nhúng, IoT</p>
+            </div>
+
+            <div class="mb-4">
+                <p style="font-weight: bold; color: #002776;">
+                    Khảo sát kiến thức trên thực tế bo mạch
+                </p>
+                <p>Những giao thức, giao tiếp phần cứng: UART, SPI, CAN, USB, GPIO, ...</p>
+            </div>
+
+            <div class="mb-4">
+                <p style="font-weight: bold; color: #002776;">
+                    Hiện thực dự án, thử nghiệm hệ thống
+                </p>
+                <p>Hiện thực những giải pháp thử nghiệm Hệ thống nhúng, hoặc các ứng dụng IoT</p>
+            </div>
+
+            <div class="mb-4">
+                <p style="font-weight: bold; color: #002776;">
+                    Thống kê, phân tích và quản lý hệ thống
+                </p>
+                <p>Phân tích hiệu quả phòng thông qua các báo cáo, biểu đồ và dữ liệu hoạt động phòng.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="../assets/products/BlockDiagram_resire1850x1000-1850x1000_c.png" class="img-fluid" alt="System Integration Example">
+            <img src="../assets/products/Kit_TN_Arm_FocusOnModule_Communicate_resire1850x1000-1850x1000_c.png" class="img-fluid" alt="System Integration Example">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
