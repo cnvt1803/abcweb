@@ -282,5 +282,22 @@
         }
       };
     </script>
+    <script>
+      function handleFeaturesImage(e) {
+        const img = document.querySelector(".features-left img");
+
+        if (e.matches) {
+          img.style.marginLeft = "0";
+          img.style.maxWidth = "80%";
+        } else {
+          img.style.marginLeft = "80px";
+          img.style.maxWidth = "80%";
+        }
+      }
+      const featuresMediaQuery = window.matchMedia("(max-width: 480px)");
+      featuresMediaQuery.addEventListener("change", handleFeaturesImage);
+
+      handleFeaturesImage(featuresMediaQuery);
+    </script>
   </body>
 </html>
