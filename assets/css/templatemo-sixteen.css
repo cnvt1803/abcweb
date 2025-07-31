@@ -64,7 +64,7 @@ ul.social-icons li a:hover {
 }
 
 a.filled-button {
-  background-color: #f33f3f;
+  background-color: #4285f4;
   color: #fff;
   font-size: 14px;
   text-transform: capitalize;
@@ -76,7 +76,7 @@ a.filled-button {
 }
 
 a.filled-button:hover {
-  background-color: #121212;
+  background-color: #0062ff;
   color: #fff;
 }
 
@@ -492,7 +492,7 @@ header {
 .about-title {
   font-size: 36px;
   text-transform: uppercase;
-  color: darkgrey;
+  color: #545d60;
   font-weight: bold;
 }
 
@@ -562,7 +562,7 @@ header {
 
 .persuade-title {
   font-size: 44px;
-  color: #c8c8c8;
+  color: #545d60;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
