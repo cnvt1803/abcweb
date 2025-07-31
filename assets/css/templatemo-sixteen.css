@@ -132,6 +132,15 @@ a.filled-button:hover {
   text-shadow: 0 0 5px #00ccff, 0 0 10px #3399ff, 0 0 15px #0066cc;
 }
 
+.banner .text-content h2 {
+  color: #00ccff;
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 900;
+  text-shadow: 0 0 5px #00ccff, 0 0 10px #3399ff, 0 0 15px #0066cc;
+}
+
 #preloader {
   overflow: hidden;
   background: white;
