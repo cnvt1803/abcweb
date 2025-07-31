@@ -54,9 +54,7 @@
                 <a class="nav-link" href="../about.html">Về chúng tôi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../contact.html"
-                  >Liên hệ với chúng tôi</a
-                >
+                <a class="nav-link" href="../contact.html">Liên hệ</a>
               </li>
             </ul>
           </div>
@@ -311,6 +309,21 @@
           modal.style.display = "none";
         }
       };
+    </script>
+    <script>
+      const mediaQuery = window.matchMedia("(max-width: 480px)");
+      function handleResponsiveImg(e) {
+        const img = document.querySelector(".right a img");
+        if (e.matches) {
+          img.style.marginLeft = "0";
+          img.style.maxWidth = "45%";
+        } else {
+          img.style.marginLeft = "120px";
+          img.style.maxWidth = "45%";
+        }
+      }
+      mediaQuery.addListener(handleResponsiveImg);
+      handleResponsiveImg(mediaQuery); // Chạy lần đầu khi load trang
     </script>
   </body>
 </html>

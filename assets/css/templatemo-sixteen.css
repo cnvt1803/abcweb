@@ -114,20 +114,22 @@ a.filled-button:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .page-heading .text-content h4 {
-  color: white;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 700;
+  color: #e0f7fa;
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 400;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .page-heading .text-content h2 {
-  color: #fff;
-  font-size: 62px;
+  color: #00ccff;
+  font-size: 72px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
+  font-weight: 900;
+  text-shadow: 0 0 5px #00ccff, 0 0 10px #3399ff, 0 0 15px #0066cc;
 }
 
 #preloader {
@@ -293,7 +295,7 @@ header {
 
 /* Fallback hamburger lines if image fails to load */
 .navbar-toggler-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 2px;
@@ -306,7 +308,6 @@ header {
 .navbar-toggler-icon img[src=""]:before {
   display: block;
 }
-
 
 .banner {
   position: relative;
@@ -333,7 +334,7 @@ header {
 }
 
 .banner-item-01::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -348,7 +349,7 @@ header {
 }
 
 .banner-item-02::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -363,7 +364,7 @@ header {
 }
 
 .banner-item-03::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -378,7 +379,7 @@ header {
 }
 
 .banner-item-04::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -393,7 +394,7 @@ header {
 }
 
 .banner-item-05::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -683,7 +684,7 @@ header {
     align-items: flex-end;
   }
   .persuade {
-    padding: 0px
+    padding: 0px;
   }
   .persuade-content {
     padding: 0px;
@@ -705,7 +706,6 @@ header {
     width: 100%;
   }
 }
-
 
 /* Call To Action */
 
@@ -1280,27 +1280,27 @@ header {
     left: 15px;
     top: 10px;
   }
-  
+
   .navbar .navbar-brand .logo {
     height: 50px;
   }
-  
+
   .logo-image {
     width: 180px;
     height: auto;
   }
-  
+
   .navbar .navbar-toggler {
     position: absolute;
     right: 15px;
     top: 22px;
     padding: 4px 8px;
   }
-  
+
   .navbar:after {
     display: none;
   }
-  
+
   #navbarResponsive {
     z-index: 99999;
     position: absolute;
@@ -1312,34 +1312,34 @@ header {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 10px 10px;
   }
-  
+
   .navbar .navbar-nav .nav-item {
     border-bottom: 1px solid #eee;
   }
-  
+
   .navbar .navbar-nav .nav-item:last-child {
     border-bottom: none;
   }
-  
+
   .navbar .navbar-nav a.nav-link {
     padding: 15px 20px;
     color: #333 !important;
     margin: 0;
     border-radius: 0;
   }
-  
+
   .navbar .navbar-nav .nav-link:hover {
     color: #4285f4 !important;
     background-color: rgba(66, 133, 244, 0.1) !important;
   }
-  
+
   .navbar .navbar-nav .active > .nav-link,
   .navbar .navbar-nav .nav-link.active {
     color: #fff !important;
     background-color: #4285f4 !important;
     border-radius: 0;
   }
-  
+
   .banner-item-01,
   .banner-item-02,
   .banner-item-03,
@@ -1354,15 +1354,15 @@ header {
     left: 10px;
     top: 15px;
   }
-  
+
   .navbar .navbar-brand .logo {
     height: 45px;
   }
-  
+
   .logo-image {
     width: 150px;
   }
-  
+
   .navbar .navbar-toggler {
     right: 10px;
     top: 25px;
@@ -1373,20 +1373,20 @@ header {
   .navbar .navbar-brand .logo {
     height: 40px;
   }
-  
+
   .logo-image {
     width: 120px;
   }
-  
+
   .navbar .navbar-toggler {
     top: 27px;
   }
-  
+
   .navbar .navbar-nav a.nav-link {
     padding: 12px 15px;
     font-size: 14px;
   }
-  
+
   .banner-item-01,
   .banner-item-02,
   .banner-item-03,
@@ -1394,7 +1394,7 @@ header {
   .banner-item-05 {
     padding: 150px 0px;
   }
-  
+
   .product-item .down-content h4 {
     margin-bottom: 10px;
   }
@@ -1416,15 +1416,15 @@ header {
     left: 10px;
     top: 15px;
   }
-  
+
   .navbar .navbar-brand .logo {
     height: 45px;
   }
-  
+
   .logo-image {
     width: 150px;
   }
-  
+
   .navbar .navbar-toggler {
     right: 10px;
     top: 25px;
@@ -1435,15 +1435,15 @@ header {
   .navbar .navbar-brand .logo {
     height: 40px;
   }
-  
+
   .logo-image {
     width: 120px;
   }
-  
+
   .navbar .navbar-toggler {
     top: 27px;
   }
-  
+
   .navbar .navbar-nav a.nav-link {
     padding: 12px 15px;
     font-size: 14px;
