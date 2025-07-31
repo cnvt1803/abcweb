@@ -316,19 +316,44 @@
       };
     </script>
     <script>
-      const mediaQuery = window.matchMedia("(max-width: 480px)");
-      function handleResponsiveImg(e) {
+      // Khai báo các media queries
+      const smallScreenQuery = window.matchMedia("(max-width: 480px)");
+      const mediumScreenQuery = window.matchMedia(
+        "(min-width: 481px) and (max-width: 767px)"
+      );
+      const largeScreenQuery = window.matchMedia(
+        "(min-width: 768px) and (max-width: 991px)"
+      );
+
+      function handleResponsiveImg() {
         const img = document.querySelector(".right a img");
-        if (e.matches) {
+
+        if (smallScreenQuery.matches) {
+          // ≤ 480px (Mobile nhỏ)
+          img.style.marginLeft = "0";
+          img.style.maxWidth = "45%";
+        } else if (mediumScreenQuery.matches) {
+          // 481px - 767px (Mobile lớn/Tablet nhỏ)
+          img.style.marginLeft = "0";
+          img.style.maxWidth = "45%";
+        } else if (largeScreenQuery.matches) {
+          // 768px - 991px (Tablet lớn)
           img.style.marginLeft = "0";
           img.style.maxWidth = "45%";
         } else {
+          // ≥ 992px (Desktop)
           img.style.marginLeft = "120px";
           img.style.maxWidth = "45%";
         }
       }
-      mediaQuery.addListener(handleResponsiveImg);
-      handleResponsiveImg(mediaQuery); // Chạy lần đầu khi load trang
+
+      // Gán sự kiện listener cho tất cả media queries
+      smallScreenQuery.addListener(handleResponsiveImg);
+      mediumScreenQuery.addListener(handleResponsiveImg);
+      largeScreenQuery.addListener(handleResponsiveImg);
+
+      // Chạy lần đầu khi load trang
+      handleResponsiveImg();
     </script>
 
     <script src="../vendor/jquery/jquery.min.js"></script>
