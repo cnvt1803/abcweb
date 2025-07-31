@@ -625,7 +625,7 @@ header {
 }
 
 .footer-column h4 {
-  color: #ffffff; /* Tiêu đề cột màu trắng */
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: 16px;
   text-transform: uppercase;
@@ -669,7 +669,7 @@ header {
   display: flex;
   align-items: center;
   line-height: 1.5;
-  color: #b0b0b0; /* Màu chữ thông tin liên hệ */
+  color: #b0b0b0;
 }
 
 .contact-info i,
