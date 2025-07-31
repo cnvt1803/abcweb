@@ -260,6 +260,11 @@ ul.with-tick li::before {
 
   .features-right {
     margin-top: 20px;
+    text-align: left !important;
+  }
+  .features-full {
+    margin-top: 20px;
+    text-align: left !important;
   }
 }
 
