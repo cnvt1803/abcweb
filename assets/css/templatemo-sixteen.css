@@ -562,9 +562,9 @@ header .navbar {
 }
 
 .persuade-image {
-	width: 100%;
-	height: auto;
-	max-width: 800px;
+	width: auto;
+	height: 100%;
+	max-width: 200px;
 	border-radius: 10px;
 }
 
