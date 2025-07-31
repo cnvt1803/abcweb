@@ -108,6 +108,12 @@
   color: #007bff;
 }
 
+.stars li {
+  display: inline-block;
+  color: #ffc107;
+  font-size: 1rem;
+  margin-right: 0.15rem;
+}
 /* ===== Pagination ===== */
 .pages {
   margin-top: 3rem;
