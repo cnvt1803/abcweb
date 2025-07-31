@@ -242,3 +242,101 @@ ul.with-tick li::before {
     transform: translateY(0);
   }
 }
+@media (max-width: 991px) {
+  .container-pro {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .row,
+  .features-row {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .right img {
+    margin-left: 0;
+  }
+
+  .features-right {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile: dưới 767px */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .spec-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .buy-button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+}
+
+/* Mobile nhỏ: dưới 480px */
+@media (max-width: 480px) {
+  .container-pro {
+    padding: 50px 15px 20px;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row,
+  .features-row {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .buy-button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .modal-content h3 {
+    font-size: 20px;
+  }
+
+  .modal-content p,
+  .modal-content ul {
+    font-size: 14px;
+  }
+}
