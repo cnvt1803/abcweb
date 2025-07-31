@@ -88,14 +88,6 @@
   color: #0062cc;
 }
 
-.down-content h6 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #007bff;
-  margin: 0.5rem 0 1rem 0;
-  order: 1;
-}
-
 .down-content p {
   margin-bottom: 1.25rem;
   color: #555;
@@ -112,12 +104,8 @@
   border-top: 1px dashed #eee;
   order: 3;
 }
-
-.stars li {
-  display: inline-block;
-  color: #ffc107;
-  font-size: 1rem;
-  margin-right: 0.15rem;
+.stars h4 {
+  color: #007bff;
 }
 
 /* ===== Pagination ===== */
@@ -198,10 +186,6 @@
   .down-content h4 {
     font-size: 1.05rem;
   }
-
-  .down-content h6 {
-    display: none;
-  }
 }
 @media (max-width: 480px) {
   .products {
@@ -236,10 +220,6 @@
     display: flex;
     flex-direction: column;
     min-height: 0;
-  }
-
-  .down-content h6 {
-    display: none;
   }
 
   .down-content p {
