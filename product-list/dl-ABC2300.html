@@ -287,21 +287,23 @@
       };
     </script>
     <script>
-      function handleFeaturesImage(e) {
+      function handleFeaturesImage() {
         const img = document.querySelector(".features-left img");
+        const width = window.innerWidth;
 
-        if (e.matches) {
+        if (width <= 991) {
+          // Mobile nhỏ (≤ 480px)
           img.style.marginLeft = "0";
           img.style.maxWidth = "80%";
         } else {
+          // Desktop (≥ 992px)
           img.style.marginLeft = "80px";
           img.style.maxWidth = "80%";
+          img.style.filter = "none";
         }
       }
-      const featuresMediaQuery = window.matchMedia("(max-width: 480px)");
-      featuresMediaQuery.addEventListener("change", handleFeaturesImage);
-
-      handleFeaturesImage(featuresMediaQuery);
+      window.addEventListener("resize", handleFeaturesImage);
+      handleFeaturesImage();
     </script>
 
     <script src="../vendor/jquery/jquery.min.js"></script>

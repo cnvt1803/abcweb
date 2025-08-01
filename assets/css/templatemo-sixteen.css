@@ -483,6 +483,9 @@ header {
   text-align: center;
   margin-top: 30px;
 }
+.products-section .row > [class*="col-"] {
+  margin-bottom: 20px;
+}
 
 /* About us */
 .about-us {
